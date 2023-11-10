@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Inter&family=Mohave&family=Montserrat:wght@100;400;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: rgb(0, 0, 0);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, greenyellow);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent, greenyellow);
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.dummy-nav {
+  background-color: #000;
+  z-index: 1;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+}
+
+nav {
+  background-color: #000;
+  margin: 20px 40px;
+  padding: 20px;
+  border-radius: 100px;
+  box-shadow: 0 0 60px -15px greenyellow;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  width: calc(100% - 120px);
+  position: fixed;
+  font-size: large;
+  z-index: 100;
+}
+
+.bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -5;
+  opacity: 0.13;
+}
+
+.logo {
+  height: auto;
+  width: 100px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.links li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.greenyellow {
+  color: greenyellow;
+}
+
+.name {
+  font-family: "Mohave", sans-serif;
+  font-size: 120px;
+}
+
+.date {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin-top: 0.5rem;
+  color: rgb(177, 171, 171);
+  font-weight: 600;
+}
+
+.tagline {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 100;
+  margin-top: 0.5rem;
+  color: rgb(177, 171, 171);
+  font-weight: 400;
+}
+
+.hero-btn {
+  align-items: center;
+  margin-top: 2rem;
+  padding: 15px 20px;
+  border-radius: 20px;
+  font-family: "Mohave", sans-serif;
+  background-color: rgb(151, 215, 22);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: large;
+}
+
+.hero {
+  text-align: center;
+  color: white;
+  padding-top: 200px;
+}
+
+.hero h1 {
+  font-size: 95px;
+  font-weight: 100;
+}
+
+.hero-2 {
+  text-align: center;
+  color: white;
+  padding: 300px 80px;
+  font-size: 50px;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 150px 200px;
+}
+
+.text {
+  padding: 2rem;
+}
+
+.text h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  padding: 0 20px;
+}
+
+.text p {
+  font-size: 1.2rem;
+  font-weight: 100;
+  margin-bottom: 0.5rem;
+  color: rgb(177, 171, 171);
+  font-weight: 400;
+  padding: 0 20px;
+}
+
+.about-img {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.img {
+  width: 28rem;
+}
+
+.strip {
+  background: #b1fc03;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  height: 2.5rem;
+  margin-bottom: 5rem;
+  min-width: 480px;
+  position: relative;
+}
+
+.scrolling-text {
+  color: #000;
+  top: 0;
+  left: 100%;
+  z-index: 4;
+  animation: scroll 15s linear infinite;
+  margin-top: 0.35rem;
+  font-weight: 400;
+  overflow: hidden;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  position: absolute;
+}
+
+@keyframes scroll {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: -100%;
+  }
+}
+
+.scrolling-text:hover {
+  animation-play-state: paused;
+}
