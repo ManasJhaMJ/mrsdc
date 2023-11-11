@@ -34,7 +34,7 @@ a {
 .dummy-nav {
   background-color: #000;
   z-index: 1;
-  height: 100px;
+  height: 20px;
   width: 100%;
   position: fixed;
 }
@@ -44,6 +44,7 @@ nav {
   margin: 20px 40px;
   padding: 20px;
   border-radius: 100px;
+  border: #04d9ff 1px solid;
   box-shadow: 0 0 60px -15px #04d9ff;
   display: flex;
   justify-content: space-between;
@@ -57,10 +58,10 @@ nav {
 
 .bg {
   position: fixed;
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
   z-index: -5;
-  opacity: 0.3;
+  opacity: 0.22;
 }
 
 .logo {
@@ -91,7 +92,7 @@ nav {
 
 .date {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 100;
   margin-top: 0.5rem;
   color: rgb(177, 171, 171);
@@ -180,6 +181,10 @@ nav {
   width: 28rem;
 }
 
+.about-mob {
+  display: none;
+}
+
 .strip {
   background: #04d9ff;
   overflow: hidden;
@@ -187,7 +192,7 @@ nav {
   position: relative;
   height: 2.5rem;
   margin-bottom: 5rem;
-  min-width: 480px;
+  min-width: 100%;
   position: relative;
 }
 
@@ -217,4 +222,83 @@ nav {
 
 .scrolling-text:hover {
   animation-play-state: paused;
+}
+
+@media only screen and (max-width: 426px) {
+  .dummy-nav {
+    background-color: #000;
+    z-index: 1;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+  }
+
+  nav {
+    background-color: #000;
+    margin: 20px 20px;
+    padding: 20px 5px;
+    border-radius: 100px;
+    box-shadow: 0 0 60px -15px #04d9ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: calc(100% - 50px);
+    position: fixed;
+    font-size: 18px;
+    z-index: 100;
+  }
+
+  .logo {
+    height: auto;
+    width: 100px;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .links li {
+    list-style: none;
+    margin: 0 10px;
+  }
+
+  .hero {
+    padding: 150px 15px 10px 15px;
+  }
+
+  .name {
+    font-size: 80px;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .hero-2 {
+    text-align: center;
+    color: white;
+    padding: 300px 10px;
+    font-size: 28px;
+  }
+
+  .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 150px 10px;
+  }
+
+  .img {
+    width: 15rem;
+  }
+
+  .about-mob {
+    display: block;
+  }
+
+  .lg-about {
+    display: none;
+  }
 }
