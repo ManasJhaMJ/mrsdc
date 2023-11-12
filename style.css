@@ -6,6 +6,10 @@
   font-family: "Inter", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #000;
   margin: 0;
@@ -119,11 +123,11 @@ nav {
   font-weight: 600;
   font-size: large;
   border: none;
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .hero-btn:hover {
-  transform: scale(1.1);
+  transform: scale(1.07);
 }
 
 .hero {
@@ -220,8 +224,49 @@ nav {
   }
 }
 
-.scrolling-text:hover {
+/* .scrolling-text:hover {
   animation-play-state: paused;
+} */
+
+#team {
+  padding: 200px 100px;
+  text-align: center;
+}
+
+#team h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  padding: 0 20px;
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+}
+
+.team-card {
+  width: 300px;
+  margin: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.team-card:hover {
+  transform: scale(1.05);
+}
+
+.team-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: #04d9ff 0px 0px 6px 1px;
+}
+
+#more {
+  display: none;
 }
 
 @media only screen and (max-width: 426px) {
@@ -300,5 +345,36 @@ nav {
 
   .lg-about {
     display: none;
+  }
+
+  #team {
+    padding: 100px 10px;
+    text-align: center;
+  }
+
+  #team h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    padding: 0 20px;
+  }
+
+  #team h3 {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  #team p {
+    font-size: 12px;
+    margin-bottom: 1rem;
+    color: rgb(177, 171, 171);
+    font-weight: 400;
+  }
+
+  .team-card {
+    width: 100%;
+    margin: 8px;
+    transition: 0.3s;
   }
 }
