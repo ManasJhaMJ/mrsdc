@@ -137,7 +137,7 @@ nav {
 }
 
 .hero h1 {
-  font-size: 95px;
+  font-size: 85px;
   font-weight: 100;
 }
 
@@ -269,6 +269,110 @@ nav {
   display: none;
 }
 
+#explore {
+  text-align: center;
+  padding: 150px 100px;
+}
+
+.explore-title {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: baseline;
+  margin: 10px 0 30px 0;
+}
+
+#explore h1 {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  padding: 0 20px;
+}
+
+.explore-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.explore-card {
+  width: 30%;
+  margin: 20px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.explore-card h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  padding: 0 20px;
+}
+
+.explore-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  border: rgba(4, 217, 255, 0.2) 2px solid;
+  transition: ease-in-out 0.3s;
+}
+
+.explore-card img:hover {
+  transform: scale(1.05);
+}
+
+#footer {
+  padding: 2px 70px;
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  background-color: #000;
+  border-radius: 24px;
+  border: rgba(4, 217, 255, 0.2) 2px solid;
+}
+
+.footer-col {
+  flex-basis: 50%;
+  padding: 3rem 2rem;
+  flex: 1;
+  width: 100%;
+}
+
+.icons {
+  opacity: 0.8;
+  transition: 0.3s;
+  margin: 20px 5px;
+  width: 42px;
+  height: auto;
+}
+
+.footer-col a:hover {
+  opacity: 0.6;
+  transition: 0.5s;
+}
+
+.text-bottom {
+  font-size: 1.2rem;
+  font-weight: 100;
+  margin-bottom: 0.5rem;
+  color: rgb(177, 171, 171);
+  font-weight: 400;
+  padding: 10px 20px 0 20px;
+}
+
+.footer-logo {
+  width: 300px;
+  height: auto;
+  padding: 20px 0;
+}
+
 @media only screen and (max-width: 426px) {
   .dummy-nav {
     background-color: #000;
@@ -376,5 +480,63 @@ nav {
     width: 100%;
     margin: 8px;
     transition: 0.3s;
+  }
+
+  #explore {
+    text-align: center;
+    padding: 80px 10px;
+  }
+
+  #explore h1 {
+    font-size: 3rem;
+  }
+
+  #explore h2 {
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    padding: 0 20px;
+  }
+
+  .explore-title {
+    display: block;
+  }
+
+  .explore-card {
+    width: calc(50% - 30px);
+    margin: 20px 15px;
+  }
+
+  .explore-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    border: rgba(4, 217, 255, 0.2) 2px solid;
+    transition: ease-in-out 0.3s;
+  }
+
+  #footer {
+    padding: 2px 25px;
+    text-align: center;
+  }
+
+  .footer-col {
+    flex-basis: 50%;
+    padding: 1rem 2rem;
+    flex: 1;
+    width: 100%;
+  }
+
+  .icons {
+    margin: 10px 5px;
+    width: 35px;
+    height: auto;
+  }
+
+  .footer-logo {
+    width: 170px;
+    height: auto;
+    padding: 20px 0;
   }
 }
