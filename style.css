@@ -20,12 +20,15 @@ body {
 ::-webkit-scrollbar {
   width: 5px;
 }
+
 ::-webkit-scrollbar-track {
   background-color: rgb(0, 0, 0);
 }
+
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(transparent, #04d9ff);
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(transparent, #04d9ff);
 }
@@ -62,8 +65,8 @@ nav {
 
 .bg {
   position: fixed;
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
   z-index: -5;
   opacity: 0.22;
 }
@@ -83,6 +86,13 @@ nav {
 .links li {
   list-style: none;
   margin: 0 10px;
+}
+
+#home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .greenyellow {
@@ -133,7 +143,7 @@ nav {
 .hero {
   text-align: center;
   color: white;
-  padding-top: 200px;
+  padding-top: 250px;
 }
 
 .hero h1 {
@@ -380,6 +390,11 @@ nav {
     height: 70px;
     width: 100%;
     position: fixed;
+  }
+
+  .bg {
+    width: auto;
+    height: 100%;
   }
 
   nav {
